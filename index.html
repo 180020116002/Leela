@@ -3,8 +3,11 @@
 <head>
   <title>Leela Products</title>
 </head>
-<body>
   <body onload=openInNewTab("products.pdf#toolbar=0")>
- 
+    <script>
+    function openInNewTab(url) {
+		var win = window.open(url, '_blank');
+		win.focus();
+	}</script>
 </body>
 </html>
